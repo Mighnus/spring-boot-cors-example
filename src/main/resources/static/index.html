@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing page</title>
+</head>
+<body>
+
+<h1>
+    Ingredients-Landing-Page ...
+</h1>
+
+<script>
+    fetch('http://localhost:8080/ingredients')
+        .then(res => res.json())
+        .then(data => console.log('Output: ', data))
+        .catch(err => console.error(err));
+</script>
+
+</body>
+</html>
